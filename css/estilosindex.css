@@ -1,0 +1,384 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#ffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 30px;
+    
+}
+
+nav li a {
+    font-weight: bold;
+    padding: 10px 20px;  /* Añade más espacio alrededor del texto */
+    color: #04416a;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 25px;  /* Bordes redondeados */
+    transition: all 0.3s ease-in-out;  /* Transiciones suaves */
+}
+
+nav li a:hover {
+    font-weight: bold;
+    background-color: #fafafa;   /* Color de fondo oscuro al hacer hover */
+    color: #00aaff;  /* Color del texto al hacer hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    transform: translateY(-3px);  /* Mueve el botón hacia arriba en hover */
+    transition: all 0.3s ease-in-out;  /* Transición suave */
+}
+
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    padding: 10px;
+    margin: 0 10px;
+    color: #04416a;
+    font-size: 28px;
+    border-radius: 25%;  
+}
+
+.iconos a:hover {
+    color: #00aaff; 
+}
+
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.principal {
+    background-image: url('../imagen/moom.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 960px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fafafa;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.contenidouno h1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 200px;
+    margin-bottom: 15px;
+    color: #fafafa;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.contenidouno h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #fafafa;
+    text-transform: uppercase; 
+    letter-spacing: 1.5px;
+}
+
+.contenidouno p{
+    margin-bottom: 50px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #fafafa;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+
+}
+
+.button {
+    background-color: #04416a; /* Azul oscuro */
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 20px; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 1px; 
+    cursor: pointer; 
+}
+
+.button:hover {
+    background-color: #00aaff; 
+    color: #fafafa;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+/*estilos para el contenido dos*/
+
+.banner {
+    background-image: url('../imagen/city.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 960px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    border: #04416a 5px solid;
+    border-radius: 30px;
+    width: 75%;
+    height: 300px;
+    text-align: center;
+    color: #fafafa;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1);
+    margin: 20px auto;
+}
+
+.contenidodos:hover{
+    border: #00aaff 5px solid;
+}
+
+.contenidodos h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fafafa;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.figuras {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.figuras a {
+    margin: 0 15px;
+    color: #04416a;
+    font-size: 30px;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+.figuras a:hover {
+    transform: scale(1.4);
+    color: #00aaff;
+    
+}
+
+
+
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+  .galeria {
+    background-color: #fafafa;
+    padding: 50px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+   }
+
+  .galeria h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .galeria .parrafo{
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .galeria p {
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .contenidotres {
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .contenidotres .columna {
+    flex: 1;
+    margin: 0 20px ;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .contenidotres .columna:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 2); /* Sombra más pronunciada al hacer hover */
+}
+
+  .contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    
+  }
+
+  .contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-weight: bold;
+  }
+
+  .contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #04416a;
+    color: #fafafa;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+  }
+
+  .contenidotres .columna a:hover {
+    background-color: #00aaff;
+    color: #fafafa;
+    transform: scale(1.1,1.1);
+    font-weight: bold;
+  }
+
+
+  
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-color:#04416a;
+    padding: 20px;
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  h3, p{
+    color:  #00aaff;
+    margin-bottom: 8px;
+    font-size: 30px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .social-icons1 {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #00aaff;
+    font-size: 40px;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #c2ebff; /* Cambia esto según el color que desees para el hover */
+}
+
+h4{
+    text-align: center;
+    font-size: 27px;
+    color:#00aaff;
+}
+
+
+  
+
+  
